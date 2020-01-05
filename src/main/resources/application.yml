@@ -1,0 +1,26 @@
+#spring:
+  application:
+    name: @project.artifactId@
+server:
+  port: 18002
+
+management:
+  context-path: /monitor
+  security:
+    enabled: false
+
+global:
+  taxEffect: true
+
+logging:
+  level: debug
+
+debug: true
+spring:
+  datasource:
+    ENTRY:
+      driverClassName: oracle.jdbc.OracleDriver
+      url: jdbc:oracle:thin:@localhost:1521:xe
+      username: system
+      password: oracle
+

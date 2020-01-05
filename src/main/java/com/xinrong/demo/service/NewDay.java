@@ -1,4 +1,4 @@
-package service;
+package com.xinrong.demo.service;
 
 /**
  * @author chengxinrong

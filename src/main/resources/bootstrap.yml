@@ -1,0 +1,15 @@
+spring:
+  cloud:
+    consul:
+      host: 127.0.0.1
+      port: 8500
+      discovery:
+        config:
+          enable: true
+          profileSeparator: /
+          format: yaml
+          heartbeat:
+            enabled: true
+            ttl-value: 10
+            ttl-unit: s
+          perferIpAddress: true
